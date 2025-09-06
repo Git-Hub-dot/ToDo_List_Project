@@ -41,8 +41,12 @@ This project features a modern golden-green themed UI with smooth animations, ta
 ---
 
 ## 📸 Screenshots:
-
-_(Will be uploaded soon....)_
+**Default Homepage**
+![alt text]()
+**Scheduled Tasks**
+![alt text]()
+**Completed Tasks**
+![alt text]()
 
 ---
 
