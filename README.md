@@ -1,6 +1,6 @@
 # 📝 ToDo List Web App
 
-A sleek, responsive, and production-ready **ToDo List App** built by **SAROJ DHTL** using **HTML, CSS, and JavaScript**.  
+A sleek, responsive, and production-ready **ToDo List App** built by **SAROJ DHITAL** using **HTML, CSS, and JavaScript**.  
 This project features a modern golden-green themed UI with smooth animations, task filtering, searching, and full support for managing your daily tasks.
 
 ---
@@ -42,13 +42,13 @@ This project features a modern golden-green themed UI with smooth animations, ta
 
 ## 📸 Screenshots:
 
-_(Add your app screenshots here)_
+_(Will be uploaded soon....)_
 
 ---
 
 ## 🙌 Author
 
-**Saroj Dhtl**  
+**Saroj Dhital**  
 *Computer Science Student & Web Enthusiast*
 
 ---
