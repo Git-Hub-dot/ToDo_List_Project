@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>To-Do List</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SlQJH3rN1VqX5U9kQnF5Pq6G8aC7W5cN6l4mF8yq2u8YvS2o7mZ9a6Yy3hQ9u6wqk2b6X5Q0j9lN1mW1q6tZQw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- App Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app" aria-labelledby="app-title">
+    <header class="app__header">
+      <!--<h1 id="app-title">ToDo-List App by Saroj DTL</h1> -->
+      <h1 id="app-title" 
+    style="font-family: 'Poppins', sans-serif; 
+           font-size: 42px; 
+           font-weight: 800; 
+           text-align: center; 
+           border-radius: 5px;
+           background: linear-gradient(90deg, #eedb6d, hsl(113, 100%, 50%), #FFB700); 
+           text-shadow: 1px 1px 2px rgba(0,0,0,0.4), 
+                        0 0 12px rgba(255, 215, 0, 0.6), 
+                        0 0 24px rgba(255, 223, 100, 0.5); 
+           letter-spacing: 1px; 
+           margin: 20px 0;">
+  ToDo-List App by Saroj DTL</h1>
+
+      <!-- <p class="tagline">Capture tasks, stay organized.</p> -->
+      <p class="tagline" 
+   style="font-family: 'Poppins', sans-serif; 
+          font-size: 18px; 
+          font-weight: 400; 
+          text-align: center; 
+          color: #d4af37; 
+          text-shadow: 0.5px 0.5px 1px rgba(219, 241, 20, 0.74), 
+                       0 0 8px rgba(50, 243, 50, 0.6); 
+          letter-spacing: 0.5px; 
+          margin-top: -8px; 
+          margin-bottom: 24px;">
+  Capture tasks, stay organized.
+</p>
+
+    </header>
+
+    <section class="composer" aria-label="Add a task">
+      <form id="todo-form" autocomplete="off">
+        <label class="sr-only" for="task-input">New task</label>
+        <input
+          id="task-input"
+          name="task"
+          type="text"
+          placeholder="What needs to be done?"
+          maxlength="120"
+          required
+          aria-required="true"
+        />
+        <button id="add-btn" type="submit" class="btn btn--primary">
+          <i class="fa-solid fa-plus"></i><span>Add</span>
+        </button>
+      </form>
+    </section>
+
+    <section class="controls" aria-label="Filters and actions">
+      <div class="filters" role="tablist" aria-label="Filter tasks">
+        <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="chip" data-filter="active" role="tab" aria-selected="false">Pending</button>
+        <button class="chip" data-filter="completed" role="tab" aria-selected="false">Completed</button>
+      </div>
+
+      <div class="search-wrap">
+        <label class="sr-only" for="search-input">Search tasks</label>
+        <input id="search-input" type="text" placeholder="Search…" />
+      </div>
+    </section>
+
+    <section class="list-wrap" aria-live="polite" aria-label="Task list">
+      <ul id="task-list" class="task-list"></ul>
+      <div id="empty-state" class="empty hidden">
+        <i class="fa-regular fa-square-check"></i>
+        <p>No tasks here yet. Add your first one above.</p>
+      </div>
+    </section>
+
+    <footer class="app__footer">
+      <div class="status">
+        <span id="count-active">0</span> pending
+      </div>
+      <div class="actions">
+        <button id="clear-completed" class="btn btn--ghost">
+          <i class="fa-solid fa-broom"></i><span>Clear Completed</span>
+        </button>
+        <button id="clear-all" class="btn btn--danger">
+          <i class="fa-regular fa-trash-can"></i><span>Clear All</span>
+        </button>
+      </div>
+    </footer>
+  </main>
+
+  <!-- App Script -->
+  <script src="script.js" defer></script>
+</body>
+</html>
